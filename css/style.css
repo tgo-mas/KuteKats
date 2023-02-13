@@ -11,14 +11,17 @@
 body{
     background-color: var(--bg-color);
     margin: 0;
-    width: 100%;
 }
 
+/* Navbar CSS */
+
 .navbar{
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-around;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
     background-color: var(--darker);
+    align-items: center;
 }
 
 ul{
@@ -26,14 +29,14 @@ ul{
     padding: 0;
     margin: 0;
     gap: 2rem;
-    padding: 10px;
+    list-style: none;
 }
 
 .navbar ul li {
     display: inline;
     margin: auto;
     text-align: center;
-    transition: 0.7s ease;
+    transition: 1s ease;
 }
 
 a{
@@ -52,4 +55,93 @@ li:hover a{
 
 li:hover{
     background-color: var(--darker);
+}
+
+#button-nav {
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+}
+
+#button-nav span, #button-nav span:before, #button-nav span:after {
+    width: 28px;
+    height: 3px;
+    background-color: var(--text-color);
+    display: block;
+    transition: .5s;
+}
+
+#button-nav span::before{
+    content: "";
+    transform: translateY(-9px);
+}
+
+#button-nav span:after{
+    content: "";
+    transform: translateY(6px);
+}
+
+#button-nav.toggler-open span{
+    background-color: transparent;
+}
+
+#button-nav.toggler-open span:before{
+    transform: translateY(0px) rotate(45deg);
+}
+
+#button-nav.toggler-open span:after{
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+/* Main section CSS */
+
+.main-section{
+    position: relative;
+    top: 2em;
+    background-color: #fff;
+    margin: auto;
+    width: 75%;
+    height: 50vh;
+}
+
+@media screen and (max-width: 760px){
+    .nav-container{
+        max-width: 760px;
+    }
+
+    #button-nav{
+        display: block;
+    }
+
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: calc(50vh - 60px);
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--darker);
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s ease;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a{
+        padding: 25px;
+    }
+
+    .navbar ul.open{
+        max-height: 100vh;
+        overflow: visible;
+        padding-bottom: 20px;
+    }
 }
