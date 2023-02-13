@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+:root{
+    --bg-color: rgb(201,144,132);
+    --darker: rgb(177, 104, 88);
+    --text-color: rgb(122,37,63);
+    --contrast-color: rgb(109,25,9);
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: var(--darker);
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    transition: 0.7s ease;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Pangolin", cursive;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    transition: 0.5s ease;
+}
+
+li:hover a{
+    color: var(--bg-color);
+}
+
+li:hover{
+    background-color: var(--darker);
+}
