@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>KuteKats</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="nav-container">
         <nav class="navbar">
@@ -32,7 +34,7 @@
                     <label for="slide1"></label>
                     <img src="./images/cat.jpg" alt="Gato para adoção">
                     <div class="slider-div">
-                        <h1>Adote hoje!</h1>
+                        <h1><a href="#">Adote hoje!</a></h1>
                         <p>Temos muitos bichanos esperando por um lar!</p>
                     </div>
                 </li>
@@ -41,7 +43,7 @@
                     <label for="slide2"></label>
                     <img src="./images/cat1.jpg" alt="">
                     <div class="slider-div">
-                        <h1>KuteKats</h1>
+                        <h1><a href="#">KuteKats</a></h1>
                         <p>O seu portal dedicado aos gatinhos!</p>
                     </div>
                 </li>
@@ -50,7 +52,7 @@
                     <label for="slide3"></label>
                     <img src="./images/cat2.jpg" alt="Gato para adoção">
                     <div class="slider-div">
-                        <h1>Confira nossa galeria</h1>
+                        <h1><a href="#gallery">Confira nossa galeria</a></h1>
                         <p>As fotos mais fofas para alegrar seu dia!</p>
                     </div>
                 </li>
@@ -59,20 +61,44 @@
                     <label for="slide4"></label>
                     <img src="./images/cat3.jpg" alt="Gato para adoção">
                     <div class="slider-div">
-                        <h1>Gato siamês ganha concurso em SP</h1>
+                        <h1><a href="#noticias">Gato siamês ganha concurso em SP</a></h1>
                         <p>Veja as últimas notícias sobre os felinos de todo mundo</p>
                     </div>
                 </li>
             </ul>
         </div>
-    
+
+        <article class="adopt-article">
+            <h1 id="adote"> Adote um Gatinho! </h1>
+            <hr>
+            <div class="article-block">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat, itaque blanditiis quae.</p>
+                <img src="./images/articat.png" alt="Gato cinza">
+            </div>
+            <hr>
+            <div class="article-block">
+                <img src="./images/articat2.jpg" alt="Gato cinza">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat, itaque blanditiis quae.</p>
+            </div>
+            <hr>
+            <div class="article-block">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat, itaque blanditiis quae.</p>
+                <img src="./images/articat-draw.jpg" alt="Gato cinza">
+            </div>
+        </article>
+
+        <div class="gallery-container" id="gallery">
+
+        </div>
+
         <div class="about-container">
             <div class="about-text-box">
                 <h2 id="about">Sobre</h2>
-                <p class="about-text">O KuteKats é um site construído para fins de educação e aprendizado das tecnologias HTML, CSS e Javascript.
+                <p class="about-text">O KuteKats é um site construído para fins de educação e aprendizado das
+                    tecnologias HTML, CSS e Javascript.
                     <br><br>
                     Desenvolvido por Thomas Almeida. <br>
-                    Github: https://github.com/tgo-mas
+                    Github: <a href="https://github.com/tgo-mas">https://github.com/tgo-mas</a>
                 </p>
             </div>
             <img id="profile" src="./images/profile.jpg" alt="Perfil - Thomas Almeida">
@@ -81,4 +107,5 @@
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
