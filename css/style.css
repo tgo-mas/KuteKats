@@ -49,11 +49,11 @@ a{
     transition: 0.5s ease;
 }
 
-li:hover a{
+.navbar li:hover a{
     color: var(--bg-color);
 }
 
-li:hover{
+.navbar li:hover{
     background-color: var(--darker);
 }
 
@@ -104,7 +104,119 @@ li:hover{
     background-color: #fff;
     margin: auto;
     width: 75%;
-    height: 50vh;
+    z-index: 1;
+    color: var(--text-color);
+    font-family: "Pangolin", cursive;
+}
+
+p{
+    text-align: justify;
+    vertical-align: middle;
+}
+
+/* CSS da seção Sobre */
+
+.about-container{
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-text{
+    display: block;
+    height: max-content;
+}
+
+#profile{
+    width: 10em;
+    height: 10em;
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    vertical-align: middle;
+}
+
+/* CSS do Slider */
+.slider-container{
+    display: block;
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.slider li{
+    list-style: none;
+    top: 0;
+}
+
+.slider img{
+    width: 100%;
+    margin: auto;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease;
+    position: relative;
+    width: 75vw;
+}
+
+.slider li input:not(:checked) ~ img {
+    display: none;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+}
+
+.slider li input:checked ~ label {
+    background-color: #fff;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.slider li:nth-child(1) label{
+    left: 5px;
+}
+
+.slider li:nth-child(2) label{
+    left: 25px;
+}
+
+.slider li:nth-child(3) label{
+    left: 45px;
+}
+
+.slider li:nth-child(4) label{
+    left: 65px;
+}
+
+@media screen and (max-width: 920px){
+    #profile{
+        width: 7em;
+        height: 7em;
+    }
 }
 
 @media screen and (max-width: 760px){
@@ -128,6 +240,7 @@ li:hover{
         max-height: 0;
         overflow: hidden;
         transition: 1s ease;
+        z-index: 2;
     }
 
     .navbar ul li {
@@ -143,5 +256,17 @@ li:hover{
         max-height: 100vh;
         overflow: visible;
         padding-bottom: 20px;
+        padding-top: 10px;
     }
+
+    .main-section{
+        width: 100%;
+        top: 0;
+    }
+
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
