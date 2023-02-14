@@ -6,6 +6,11 @@
     --darker: rgb(177, 104, 88);
     --text-color: rgb(122,37,63);
     --contrast-color: rgb(109,25,9);
+    --bright-text-color: rgb(244, 195, 185);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -143,29 +148,54 @@ p{
 }
 
 .slider{
-    display: flex;
+    display: block;
     width: 100%;
     height: 100%;
-    justify-content: center;
 }
 
 .slider li{
     list-style: none;
+    display: block;
+}
+
+.slider-div{
+    width: calc(100% - 40px);
+    height: calc(42.1875vw - 40px);
+    position: absolute;
     top: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 11;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.35) 20%, rgba(0,0,0, 0.35) 80%, rgba(0,0,0,0.7) 100%);
+    color: var(--bright-text-color);
+}
+
+.slider-div h1{
+    margin: 0;
+    font-size: 45px;
+}
+
+.slider-div p{
+    font-size: 20px;
 }
 
 .slider img{
-    width: 100%;
     margin: auto;
     vertical-align: top;
     opacity: 0;
     visibility: hidden;
-    transition: .5s ease;
+    transition: 1s ease;
     position: relative;
-    width: 75vw;
+    width: calc(75vw - 12px);
 }
 
 .slider li input:not(:checked) ~ img {
+    display: none;
+}
+
+.slider li input:not(:checked) ~ .slider-div {
     display: none;
 }
 
@@ -185,37 +215,41 @@ p{
 
 .slider label{
     background-color: #000;
-    bottom: 10px;
+    top: 10px;
     cursor: pointer;
     display: block;
     height: 10px;
     position: absolute;
     width: 10px;
-    z-index: 10;
+    z-index: 12;
     border-radius: 50%;
     transition: 0.3s ease;
 }
 
 .slider li:nth-child(1) label{
-    left: 5px;
+    left: 10px;
 }
 
 .slider li:nth-child(2) label{
-    left: 25px;
+    left: 30px;
 }
 
 .slider li:nth-child(3) label{
-    left: 45px;
+    left: 50px;
 }
 
 .slider li:nth-child(4) label{
-    left: 65px;
+    left: 70px;
 }
 
 @media screen and (max-width: 920px){
     #profile{
         width: 7em;
         height: 7em;
+    }
+
+    .slider img{
+        width: 75vw;
     }
 }
 
@@ -269,4 +303,11 @@ p{
         align-items: center;
     }
 
+    .slider img{
+        width: 100vw;
+    }
+
+    .slider-div{
+        height: calc(56.25vw - 40px);
+    }
 }
