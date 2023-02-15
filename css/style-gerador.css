@@ -16,6 +16,7 @@
     box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
     transition: 0.3s ease;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .gerador-div button:hover{
@@ -31,6 +32,23 @@
 
 .gerador-div h3{
     margin-bottom: 40px;
+}
+
+.img-gerador {
+    max-height: 60vh;
+}
+
+#loading {
+    max-width: 40vh;
+}
+
+.loader{
+    display: none;
+}
+
+#img-container{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 760px) {
