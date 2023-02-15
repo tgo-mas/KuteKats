@@ -31,6 +31,7 @@ body{
     padding: 0 20px;
     background-color: var(--darker);
     align-items: center;
+    z-index: 20;
 }
 
 ul{
