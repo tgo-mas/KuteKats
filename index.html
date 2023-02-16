@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="./images/kk-bright.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-slider.css">
 </head>
 
 <body>
     <div class="nav-container">
         <!--      Navbar        -->
         <nav class="navbar">
-            <h1><a href="#" id="kk-logo"><img src="./images/logo-kk.png" alt="KuteKats"></a></h1>
+            <h1><a href="#" id="kk-logo"><img src="./images/kk-bright.png" alt="KuteKats"></a></h1>
             <ul id="menu-nav">
                 <li><a href="#">Início</a></li>
                 <li><a href="#catswiper">Galeria</a></li>
-                <li><a href="#">PetShop</a></li>
+                <li><a href="./pages/petshop.html">PetShop</a></li>
                 <li><a href="./pages/gerador.html">Gerador</a></li>
                 <li><a href="#about">Sobre</a></li>
             </ul>
@@ -31,45 +32,37 @@
 
     <!-- Seção principal -->
     <section class="main-section">
+        
         <div class="slider-container">
-            <ul class="slider">
-                <li>
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <label for="slide1"></label>
-                    <img src="./images/cat.jpg" alt="Gato para adoção">
-                    <div class="slider-div">
-                        <h1><a href="#">Adote hoje!</a></h1>
-                        <p>Temos muitos bichanos esperando por um lar!</p>
+            <div class="swiper" id="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/cat.jpg" alt="">
+                        <div class="slider-mask">
+                            <div class="slider-text">
+                                <img src="./images/logo-kk.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide2">
-                    <label for="slide2"></label>
-                    <img src="./images/cat1.jpg" alt="">
-                    <div class="slider-div">
-                        <h1><a href="#">KuteKats</a></h1>
-                        <p>O seu portal dedicado aos gatinhos!</p>
+                    <div class="swiper-slide">
+                        <img src="../images/cat1.jpg" alt="">
+                        <div class="slider-mask">
+                            <div class="text-slider">
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide3">
-                    <label for="slide3"></label>
-                    <img src="./images/cat2.jpg" alt="Gato para adoção">
-                    <div class="slider-div">
-                        <h1><a href="#gallery">Confira nossa galeria</a></h1>
-                        <p>As fotos mais fofas para alegrar seu dia!</p>
+                    <div class="swiper-slide">
+                        <img src="../images/cat2.jpg" alt="">
+                        <div class="slider-mask"></div>
                     </div>
-                </li>
-                <li>
-                    <input type="radio" name="slide" id="slide4">
-                    <label for="slide4"></label>
-                    <img src="./images/cat3.jpg" alt="Gato para adoção">
-                    <div class="slider-div">
-                        <h1><a href="#noticias">Gato siamês ganha concurso em SP</a></h1>
-                        <p>Veja as últimas notícias sobre os felinos de todo mundo</p>
+                    <div class="swiper-slide">
+                        <img src="../images/cat3.jpg" alt="">
+                        <div class="slider-mask"></div>
                     </div>
-                </li>
-            </ul>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
 
         <div class="adopt-article">
@@ -148,7 +141,9 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/catswiper-script.js"></script>
+    <script src="./js/slider-script.js"></script>
+    <script src="./js/navbar-script.js"></script>
 </body>
 
 </html>
