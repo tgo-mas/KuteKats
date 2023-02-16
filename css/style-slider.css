@@ -23,14 +23,15 @@
 
 .slider-text{
     position: absolute;
-    max-width: 50%;
+    width: 100%;
     margin-top: 20%;
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .slider-text img{
     filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.7));
     transition: 0.4s ease-in-out;
+    max-width: 50%;
 }
 
 .slider-text img:hover{

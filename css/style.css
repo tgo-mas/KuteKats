@@ -63,8 +63,9 @@ ul{
 .navbar h1{
     margin: 5px;
 }
-.navbar img{
-    max-height: 60px;
+
+#kk-logo img{
+    height: 40px;
     transition: 0.3s ease;
 }
 
