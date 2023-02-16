@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KuteKats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="./images/kk-bright.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="nav-container">
-                <!--      Navbar        -->
+        <!--      Navbar        -->
         <nav class="navbar">
             <h1><a href="#" id="kk-logo"><img src="./images/logo-kk.png" alt="KuteKats"></a></h1>
             <ul id="menu-nav">
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Notícias</a></li>
+                <li><a href="#catswiper">Galeria</a></li>
+                <li><a href="#">PetShop</a></li>
                 <li><a href="./pages/gerador.html">Gerador</a></li>
                 <li><a href="#about">Sobre</a></li>
             </ul>
@@ -71,21 +72,58 @@
             </ul>
         </div>
 
-        <article class="adopt-article">
+        <div class="adopt-article">
             <h1 id="adote"> Adote um Gatinho! </h1>
-            <hr>
+        </div>
+
+        <div class="swiper swiper-cats" id="catswiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/" alt="">Slide 1
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 2
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 3
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 4
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 5
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 6
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 7
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 8
+                </div>
+                <div class="swiper-slide"><img src="" alt="">Slide 9
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="scrollbar"></div>
+
+        </div>
+
+        <article class="adopt-article">
             <div class="article-block">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat, itaque blanditiis quae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur
+                    consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat,
+                    itaque blanditiis quae.</p>
                 <img src="./images/articat.png" alt="Gato cinza">
             </div>
             <hr>
             <div class="article-block">
                 <img src="./images/articat2.jpg" alt="Gato cinza">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat, itaque blanditiis quae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur
+                    consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat,
+                    itaque blanditiis quae.</p>
             </div>
             <hr>
             <div class="article-block">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat, itaque blanditiis quae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed, fugiat eligendi reiciendis tenetur
+                    consequatur sequi veritatis sunt libero nobis ad architecto vel distinctio vitae molestiae placeat,
+                    itaque blanditiis quae.</p>
                 <img src="./images/articat-draw.jpg" alt="Gato cinza">
             </div>
         </article>
@@ -101,13 +139,15 @@
                     tecnologias HTML, CSS e Javascript.
                     <br><br>
                     Desenvolvido por Thomas Almeida. <br>
-                    <a href="https://github.com/tgo-mas">GitHub</a>, <a href="https://www.linkedin.com/in/thomasalmeid">LinkedIn</a>
+                    <a href="https://github.com/tgo-mas">GitHub</a>, <a
+                        href="https://www.linkedin.com/in/thomasalmeid">LinkedIn</a>
                 </p>
             </div>
             <img id="profile" src="./images/profile.jpg" alt="Perfil - Thomas Almeida">
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

@@ -17,3 +17,20 @@ function allEventListener() {
         })
     }
 }
+
+const swiper = new Swiper('.swiper', {
+
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+        el: '.scrollbar'
+    }
+
+})
