@@ -1,0 +1,68 @@
+
+.swiper-products{
+    height: 380px;
+    background-color: #eee;
+}
+
+.swiper-products h2 {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.swiper-products .swiper-wrapper{
+    height: 320px;
+    padding-left: 20px;
+}
+
+.swiper-products .swiper-slide{
+    background-color: #fff;
+    height: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 20px;
+    height: calc(100% - 80px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.swiper-products .swiper-slide img{
+    width: 125px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.swiper-products .div-product-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.div-product-name h3{
+    font-size: 24px;
+}
+
+.div-product-price h4{
+    margin: 0;
+    font-size: 20px;
+    display: block;
+}
+
+.div-product-price button{
+    color: var(--text-color);
+    background-color: var(--bright-text-color);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.div-product-price button:hover{
+    color: #422;
+    box-shadow: 0 0 2px 0;
+    transform: translate(2px, 2px);
+}
