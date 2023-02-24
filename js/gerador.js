@@ -2,7 +2,7 @@ let div = document.querySelector("#img-container")
 let loader = document.querySelector("#loading")
 
 function getPhoto(){
-    loader.classList.remove('loader')
+    loader.classList.remove('loader')    
     div.innerHTML = ''
     let img = document.createElement('img')
     img.classList.add('img-gerador')

@@ -26,6 +26,17 @@
     width: 100%;
     margin-top: 20%;
     margin-left: 30px;
+    padding-top: 30px;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.slider-text a{
+    color: var(--bright-text-color);
+}
+
+.slider-text a:hover{
+    color: #fff;
 }
 
 .slider-text img{
@@ -42,5 +53,6 @@
 @media screen and (max-width: 760px){
     .slider-text{
         margin-left: 15px;
+        font-size: 20px;
     }
 }
