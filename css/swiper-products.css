@@ -16,7 +16,6 @@
 
 .swiper-products .swiper-slide{
     background-color: #fff;
-    height: calc(100% - 20px);
     margin-top: 10px;
     padding: 20px;
     height: calc(100% - 80px);
@@ -65,4 +64,16 @@
     color: #422;
     box-shadow: 0 0 2px 0;
     transform: translate(2px, 2px);
+}
+
+@media screen and (max-width: 912px) {
+    .div-product-name h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div-product-name h3{
+        font-size: 16px;
+    }
 }

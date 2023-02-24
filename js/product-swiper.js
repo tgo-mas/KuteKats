@@ -10,7 +10,21 @@ const products = new Swiper('.swiper-products', {
     setWrapperSize: true,
     freeMode:{
         enabled: true,
-        sticky: true,
+        sticky: false,
         momentumBounce:false
-    }
+    },
+    breakpoints: {
+        '@0.25':{
+            slidesPerView: 2
+        },
+        '@0.50':{
+            slidesPerView: 3
+        },
+        '@0.75':{
+            slidesPerView: 3
+        },
+        '@1.00':{
+            slidesPerView: 5
+        }
+    },
 })
