@@ -240,6 +240,11 @@ p{
     font-size: 18px;
 }
 
+#petshop-title-container {
+    background-color: #eee;
+    color: var(--text-color)
+}
+
 /* Breakpoints para responsividade */
 
 @media screen and (max-width: 920px){
@@ -254,6 +259,14 @@ p{
 
     .article-block img{
         width: 20vh;
+    }
+
+    #petshop-title-container h1{
+        font-size: 38px;
+    }
+    
+    .slider-text a{
+        font-size: 32px;
     }
 }
 
@@ -323,6 +336,10 @@ p{
         font-size: 15px;
     }
 
+    .slider-text a{
+        font-size: 24px;
+    }
+
     .article-block{
         flex-direction: column;
         align-items: center;
@@ -339,5 +356,9 @@ p{
 
     .article-block p{
         order: 1;
+    }
+
+    #petshop-title-container h1{
+        font-size: 28px;
     }
 }
